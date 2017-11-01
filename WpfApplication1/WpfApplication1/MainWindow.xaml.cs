@@ -12,12 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
+using System.Collections;
+
+
 
 namespace WpfApplication1
 {
-    public enum Symbols
-    {
-        none, number, plus, minus, multiplyVar, divide, exponent, Uminus, LP, RP    /// <summary>
+    /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
@@ -25,6 +27,7 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -40,11 +43,30 @@ namespace WpfApplication1
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             EquationViewer.Text = "";
+            EquationViewer_Copy.Text = "";
         }
 
-        private void solve_click(object sender, RoutedEventArgs e)
+        public void solve_click(object sender, RoutedEventArgs e)
         {
 
+            //reversePolishNotation.ReversePolishNotation myFeed = new reversePolishNotation.ReversePolishNotation();
+            reversePolishNotation.ReversePolishNotation myFeed = new reversePolishNotation.ReversePolishNotation();
+            try
+            {
+                myFeed.ParseString(EquationViewer.Text);
+                EquationViewer_Copy.Text = myFeed.Evaluate().ToString();
+                if (EquationViewer_Copy.Text.Equals("Infinity"))
+                {
+                    EquationViewer_Copy.Text = "Overflow Error!";
+                }
+                EquationViewer.Text = "";
+            
+            }
+            catch (Exception exc)
+            {
+                EquationViewer_Copy.Text = exc.Message;
+                EquationViewer.Text = "";
+            }
         }
 
         private void add_click(object sender, RoutedEventArgs e)

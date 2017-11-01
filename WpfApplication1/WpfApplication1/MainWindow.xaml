@@ -23,7 +23,7 @@
         <Button x:Name="parenth" Content="(" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="315,98,0,0" Height="57" Click="LPar_click"/>
         <Button x:Name="solve" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="240,269,0,0" Height="41" Click="solve_click"/>
         <TextBox x:Name="EquationViewer" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" Margin="10,10,0,0" TextChanged="TextBox_TextChanged" BorderBrush="Black" FontSize="18"/>
-        <TextBox x:Name="EquationViewer_Copy" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Margin="85,49,0,0" TextChanged="TextBox_TextChanged" BorderBrush="Black" FontSize="48" DataContextChanged="TextBox_TextChanged2"/>
+        <TextBox x:Name="EquationViewer_Copy" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Margin="85,49,0,0" TextChanged="TextBox_TextChanged" BorderBrush="Black" FontSize="18" DataContextChanged="TextBox_TextChanged2"/>
         <Button x:Name="parenth_Copy" Content=")" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="390,98,0,0" Height="57" Click="RPar_click"/>
 
     </Grid>

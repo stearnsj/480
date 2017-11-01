@@ -1,0 +1,12 @@
+U:\GitHub\480\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe.config
+U:\GitHub\480\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+U:\GitHub\480\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\MainWindow.baml
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\MainWindow.g.cs
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\App.g.cs
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1_MarkupCompile.cache
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.g.resources
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.csproj.GenerateResource.Cache
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.exe
+U:\GitHub\480\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.pdb
